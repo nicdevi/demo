@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: darkslateblue;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  height: 3rem;
+}
+
+.site-header__logo {
+  font-size: 2rem;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -999;
+  position: fixed; /* Important */
+  top: 3rem; /* Important */
+  left: 0; /* Important */
+  width: 100%; /* Important */
+  height: 50vh; /* Important */
+  background-image: url(https://www.w3schools.com/css/img_fjords.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero__site-heading {
+  color: white;
+  text-shadow: 2px 2px black;
+  text-transform: uppercase;
+}
+
+.site-header {
+  background: rgba(128, 255, 0, 0.75);
+}
+
+.content {
+  background: rgba(0, 0, 255, 0.671);
+  margin-top: 60vh;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+
+.content__wrapper{
+  margin: 0 1rem;
+
+}
+
+.content__heading {
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+
+.content__sub-heading {
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+
+.content__text{
+  margin: 1rem 0rem;
+}
+
+.content__list {
+  margin: 1rem 2rem;
+}
+
+
+.site-footer {
+  background: chartreuse;
+  margin-top: 1rem;
+}
+
+.site-footer__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.site-footer__item {
+  padding: 1rem;
+  display: inline-block
+}
